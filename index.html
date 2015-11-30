@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+
+
+  </head>
+  <body ng-app="ForecastApp">
+
+    <div class="main" ng-controller="MainController">
+      <div class="container">
+        <div>
+          <h2>your weather bug-forecast</h2>
+          <div>
+            <h1 class="city">miami{{cityl}}</h1>
+
+            <div class="forecast" ng-repeat="day in fiveDay.days">
+              <div class="">
+                <div class="">
+                  <p class="temperature">74{{ temperature }}</p>
+                </div>
+                <div class="">
+                  <img ng-src="{{ day.icon }}">
+                </div>
+                <div class="">
+                </div>
+                <div class="">
+                  <p>{{ day.high }}&deg;</p>
+                </div>
+                <div class="">
+                  <p>{{ day.low }}&deg;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+
+
+    <!-- Controllers -->
+    <script src="MainController.js"></script>
+
+
+    <!-- Services -->
+    <script src="forecast.js"></script>
+
+
+    <!-- Directives -->
+
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+body{
+  background-image: url(http://www.iwallscreen.com/stock/weather-storms-windows-wallpaper.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+h2{
+  color: white;
+}
+
+h1{
+  color: #f7f7f7;
+}
+
+.temperature{
+  width: 30px;
+  height: 30px;
+  background: white;
+}
